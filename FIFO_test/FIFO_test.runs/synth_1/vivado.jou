@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Dec  6 14:10:38 2024
+# Process ID: 28468
+# Current directory: D:/Yolo_FPGA/FIFO_test/FIFO_test.runs/synth_1
+# Command line: vivado.exe -log FIFO_test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source FIFO_test.tcl
+# Log file: D:/Yolo_FPGA/FIFO_test/FIFO_test.runs/synth_1/FIFO_test.vds
+# Journal file: D:/Yolo_FPGA/FIFO_test/FIFO_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source FIFO_test.tcl -notrace

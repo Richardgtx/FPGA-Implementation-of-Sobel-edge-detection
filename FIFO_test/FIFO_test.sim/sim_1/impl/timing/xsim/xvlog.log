@@ -1,0 +1,29 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/FIFO_test/FIFO_test.sim/sim_1/impl/timing/xsim/tb_time_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module FIFO_test
+INFO: [VRFC 10-311] analyzing module fifo_generator_0
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_generic_cstr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_prim_width
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_prim_wrapper
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_top
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_v8_4_4
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_blk_mem_gen_v8_4_4_synth
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_compare
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_compare_0
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_compare_1
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_compare_2
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_dc_ss
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_ramfifo
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_top
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_v13_2_5
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_fifo_generator_v13_2_5_synth
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_memory
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_rd_bin_cntr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_rd_logic
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_rd_status_flags_ss
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_updn_cntr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_wr_bin_cntr
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_wr_logic
+INFO: [VRFC 10-311] analyzing module fifo_generator_0_wr_status_flags_ss
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/FIFO_test/FIFO_test.srcs/sim_1/new/tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb

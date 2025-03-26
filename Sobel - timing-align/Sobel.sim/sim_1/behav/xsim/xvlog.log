@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/new/Imageprocessor.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Imageprocessor
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/new/Rgb_to_ycrcb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Rgb_to_ycrcb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/new/VIP_Matrix_Generate_3x3_8Bit.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VIP_Matrix_Generate_3x3_8Bit
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sim_1/new/Image_Processor_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Image_Processor_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/Yolo_FPGA/Sobel - timing-align/Sobel.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl

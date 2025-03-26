@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  5 17:29:02 2024
+# Process ID: 22292
+# Current directory: D:/Yolo_FPGA/Rgb_toycrcb/Rgb_toycrcb.runs/synth_1
+# Command line: vivado.exe -log Rgb_to_ycrcb.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source Rgb_to_ycrcb.tcl
+# Log file: D:/Yolo_FPGA/Rgb_toycrcb/Rgb_toycrcb.runs/synth_1/Rgb_to_ycrcb.vds
+# Journal file: D:/Yolo_FPGA/Rgb_toycrcb/Rgb_toycrcb.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Rgb_to_ycrcb.tcl -notrace

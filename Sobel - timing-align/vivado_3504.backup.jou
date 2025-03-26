@@ -1,0 +1,457 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sat Dec  7 18:21:02 2024
+# Process ID: 3504
+# Current directory: D:/Yolo_FPGA/Sobel - timing-align
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15700 D:\Yolo_FPGA\Sobel - timing-align\Sobel.xpr
+# Log file: D:/Yolo_FPGA/Sobel - timing-align/vivado.log
+# Journal file: D:/Yolo_FPGA/Sobel - timing-align\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Yolo_FPGA/Sobel - timing-align/Sobel.xpr}
+update_compile_order -fileset sources_1
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+restart
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+restart
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+restart
+run 100 ms
+restart
+run 100 ms
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 100 ms
+restart
+run 100 ms
+restart
+run 30000 us
+save_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+add_files -fileset sim_1 -norecurse {{D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}}
+set_property xsim.view {{D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}} [get_filesets sim_1]
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+restart
+run 30000 us
+save_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+refresh_design
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+run 30000 us
+run 30000 us
+close_sim
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+restart
+run 30000 us
+restart
+run 30000 us
+create_ip -name c_shift_ram -vendor xilinx.com -library ip -version 12.0 -module_name c_shift_ram_0
+set_property -dict [list CONFIG.Width {8} CONFIG.Depth {1024} CONFIG.DefaultData {00000000} CONFIG.AsyncInitVal {00000000} CONFIG.SyncInitVal {00000000}] [get_ips c_shift_ram_0]
+generate_target {instantiation_template} [get_files {{d:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci}}]
+generate_target all [get_files  {{d:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci}}]
+catch { config_ip_cache -export [get_ips -all c_shift_ram_0] }
+export_ip_user_files -of_objects [get_files {{d:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci}}] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] {{d:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci}}]
+launch_runs c_shift_ram_0_synth_1 -jobs 10
+wait_on_run c_shift_ram_0_synth_1
+export_simulation -of_objects [get_files {{d:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci}}] -directory {D:/Yolo_FPGA/Sobel - timing-align/Sobel.ip_user_files/sim_scripts} -ip_user_files_dir {D:/Yolo_FPGA/Sobel - timing-align/Sobel.ip_user_files} -ipstatic_source_dir {D:/Yolo_FPGA/Sobel - timing-align/Sobel.ip_user_files/ipstatic} -lib_map_path [list {modelsim=D:/Yolo_FPGA/Sobel - timing-align/Sobel.cache/compile_simlib/modelsim} {questa=D:/Yolo_FPGA/Sobel - timing-align/Sobel.cache/compile_simlib/questa} {riviera=D:/Yolo_FPGA/Sobel - timing-align/Sobel.cache/compile_simlib/riviera} {activehdl=D:/Yolo_FPGA/Sobel - timing-align/Sobel.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+export_ip_user_files -of_objects  [get_files {{D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset fifo_generator_0 {{D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci}}
+file delete -force {D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/fifo_generator_0}
+file delete -force {d:/Yolo_FPGA/Sobel - timing-align/Sobel.gen/sources_1/ip/fifo_generator_0}
+export_ip_user_files -of_objects  [get_files {{D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/SQRT/SQRT.xci}}] -no_script -reset -force -quiet
+remove_files  -fileset SQRT {{D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/SQRT/SQRT.xci}}
+file delete -force {D:/Yolo_FPGA/Sobel - timing-align/Sobel.srcs/sources_1/ip/SQRT}
+file delete -force {d:/Yolo_FPGA/Sobel - timing-align/Sobel.gen/sources_1/ip/SQRT}
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+save_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+run 30000 us
+open_project D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.xpr
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci] -no_script -reset -force -quiet
+remove_files  -fileset fifo_generator_0 D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/fifo_generator_0/fifo_generator_0.xci
+file delete -force D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/fifo_generator_0
+file delete -force d:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.gen/sources_1/ip/fifo_generator_0
+create_ip -name c_shift_ram -vendor xilinx.com -library ip -version 12.0 -module_name c_shift_ram_0
+set_property -dict [list CONFIG.Width {8} CONFIG.Depth {1024} CONFIG.DefaultData {00000000} CONFIG.AsyncInitVal {00000000} CONFIG.SyncInitVal {00000000}] [get_ips c_shift_ram_0]
+generate_target {instantiation_template} [get_files d:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci]
+generate_target all [get_files  d:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci]
+catch { config_ip_cache -export [get_ips -all c_shift_ram_0] }
+export_ip_user_files -of_objects [get_files d:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] d:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci]
+launch_runs c_shift_ram_0_synth_1 -jobs 10
+wait_on_run c_shift_ram_0_synth_1
+export_simulation -of_objects [get_files d:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.srcs/sources_1/ip/c_shift_ram_0/c_shift_ram_0.xci] -directory D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.ip_user_files/sim_scripts -ip_user_files_dir D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.ip_user_files -ipstatic_source_dir D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.ip_user_files/ipstatic -lib_map_path [list {modelsim=D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.cache/compile_simlib/modelsim} {questa=D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.cache/compile_simlib/questa} {riviera=D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.cache/compile_simlib/riviera} {activehdl=D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+open_run synth_1 -name synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list u_clk_wiz_0/inst/clk_out1 ]]
+set_property port_width 16 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {wrdata[0]} {wrdata[1]} {wrdata[2]} {wrdata[3]} {wrdata[4]} {wrdata[5]} {wrdata[6]} {wrdata[7]} {wrdata[8]} {wrdata[9]} {wrdata[10]} {wrdata[11]} {wrdata[12]} {wrdata[13]} {wrdata[14]} {wrdata[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/RW1/D[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/G1[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[2]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[3]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[4]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[5]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[6]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[7]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[8]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[9]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[10]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[11]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[12]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[13]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[14]} {u_Imageprocessor/u_Rgb_to_ycrcb/G1[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/B1[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[2]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[3]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[4]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[5]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[6]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[7]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[8]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[9]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[10]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[11]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[12]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[13]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[14]} {u_Imageprocessor/u_Rgb_to_ycrcb/B1[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 5 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_Imageprocessor/B[0]} {u_Imageprocessor/B[1]} {u_Imageprocessor/B[2]} {u_Imageprocessor/B[3]} {u_Imageprocessor/B[4]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_Imageprocessor/processor_out[0]} {u_Imageprocessor/processor_out[1]} {u_Imageprocessor/processor_out[2]} {u_Imageprocessor/processor_out[3]} {u_Imageprocessor/processor_out[4]} {u_Imageprocessor/processor_out[5]} {u_Imageprocessor/processor_out[6]} {u_Imageprocessor/processor_out[7]} {u_Imageprocessor/processor_out[8]} {u_Imageprocessor/processor_out[9]} {u_Imageprocessor/processor_out[10]} {u_Imageprocessor/processor_out[11]} {u_Imageprocessor/processor_out[12]} {u_Imageprocessor/processor_out[13]} {u_Imageprocessor/processor_out[14]} {u_Imageprocessor/processor_out[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/vsync_reg[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/vsync_reg[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/vsync_reg[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/href_reg[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/href_reg[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/href_reg[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 6 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {u_Imageprocessor/G[0]} {u_Imageprocessor/G[1]} {u_Imageprocessor/G[2]} {u_Imageprocessor/G[3]} {u_Imageprocessor/G[4]} {u_Imageprocessor/G[5]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[2]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[3]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[4]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[5]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[6]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[7]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[8]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[9]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[10]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[11]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[12]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[13]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[14]} {u_Imageprocessor/u_Rgb_to_ycrcb/Y_add[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[7]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[8]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 5 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list {u_Imageprocessor/R[0]} {u_Imageprocessor/R[1]} {u_Imageprocessor/R[2]} {u_Imageprocessor/R[3]} {u_Imageprocessor/R[4]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list {u_Imageprocessor/Y[0]} {u_Imageprocessor/Y[1]} {u_Imageprocessor/Y[2]} {u_Imageprocessor/Y[3]} {u_Imageprocessor/Y[4]} {u_Imageprocessor/Y[5]} {u_Imageprocessor/Y[6]} {u_Imageprocessor/Y[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 3 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/valid_reg[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/valid_reg[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/valid_reg[2]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list {u_Imageprocessor/u_Rgb_to_ycrcb/R1[0]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[1]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[2]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[3]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[4]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[5]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[6]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[7]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[8]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[9]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[10]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[11]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[12]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[13]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[14]} {u_Imageprocessor/u_Rgb_to_ycrcb/R1[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 21 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[7]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[8]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[9]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[10]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[11]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[12]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[13]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[14]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[15]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[16]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[17]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[18]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[19]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[20]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe18]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe18]
+connect_debug_port u_ila_0/probe18 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[7]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[8]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe19]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe19]
+connect_debug_port u_ila_0/probe19 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe20]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe20]
+connect_debug_port u_ila_0/probe20 [get_nets [list {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[0]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[1]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[2]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[3]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[4]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[5]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[6]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[7]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[8]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[9]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[10]} {u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe21]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe21]
+connect_debug_port u_ila_0/probe21 [get_nets [list cam_pclk_IBUF_BUFG ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe22]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe22]
+connect_debug_port u_ila_0/probe22 [get_nets [list clk_50m ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe23]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe23]
+connect_debug_port u_ila_0/probe23 [get_nets [list cmos_frame_valid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe24]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe24]
+connect_debug_port u_ila_0/probe24 [get_nets [list cmos_frame_vsync ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe25]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe25]
+connect_debug_port u_ila_0/probe25 [get_nets [list u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/dout ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe26]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe26]
+connect_debug_port u_ila_0/probe26 [get_nets [list init_calib_complete ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe27]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe27]
+connect_debug_port u_ila_0/probe27 [get_nets [list u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/rst_n ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe28]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe28]
+connect_debug_port u_ila_0/probe28 [get_nets [list u_Imageprocessor/rst_n ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe29]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe29]
+connect_debug_port u_ila_0/probe29 [get_nets [list u_Imageprocessor/sys_clk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe30]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe30]
+connect_debug_port u_ila_0/probe30 [get_nets [list u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/sys_clk ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe31]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe31]
+connect_debug_port u_ila_0/probe31 [get_nets [list u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/valid_in ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe32]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe32]
+connect_debug_port u_ila_0/probe32 [get_nets [list u_Imageprocessor/valid_in ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe33]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe33]
+connect_debug_port u_ila_0/probe33 [get_nets [list u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/valid_out ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe34]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe34]
+connect_debug_port u_ila_0/probe34 [get_nets [list u_Imageprocessor/valid_out ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe35]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe35]
+connect_debug_port u_ila_0/probe35 [get_nets [list u_Imageprocessor/vsync_in ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe36]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe36]
+connect_debug_port u_ila_0/probe36 [get_nets [list u_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/vsync_out ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe37]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe37]
+connect_debug_port u_ila_0/probe37 [get_nets [list u_Imageprocessor/vsync_out ]]
+save_constraints
+reset_run impl_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 10
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.runs/impl_1/ov5640_hdmi.bit} [get_hw_devices xc7a200t_0]
+set_property PROBES.FILE {D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a200t_0]
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+set_property PROBES.FILE {D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a200t_0]
+set_property FULL_PROBES.FILE {D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.runs/impl_1/debug_nets.ltx} [get_hw_devices xc7a200t_0]
+set_property PROGRAM.FILE {D:/Yolo_FPGA/38_ov5640_hdmi/prj/ov5640_hdmi.runs/impl_1/ov5640_hdmi.bit} [get_hw_devices xc7a200t_0]
+program_hw_devices [get_hw_devices xc7a200t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a200t_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xc7a200t_0] -filter {CELL_NAME=~"u_ila_0"}]]
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+current_project Sobel
+close_sim
+close_project

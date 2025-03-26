@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec  8 19:25:02 2024
+# Process ID: 15856
+# Current directory: D:/Yolo_FPGA/Sobel - timing-align/Sobel.runs/impl_1
+# Command line: vivado.exe -log Imageprocessor.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Imageprocessor.tcl -notrace
+# Log file: D:/Yolo_FPGA/Sobel - timing-align/Sobel.runs/impl_1/Imageprocessor.vdi
+# Journal file: D:/Yolo_FPGA/Sobel - timing-align/Sobel.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source Imageprocessor.tcl -notrace

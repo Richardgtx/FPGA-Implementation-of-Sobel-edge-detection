@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../Sobel.gen/sources_1/ip/fifo_generator_0/sim/fifo_generator_0.v" \
+"../../../../Sobel.srcs/sources_1/new/Rgb_to_ycrcb.v" \
+"../../../../Sobel.srcs/sources_1/new/VIP_Matrix_Generate_3x3_8Bit.v" \
+"../../../../Sobel.srcs/sources_1/new/Imageprocessor.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

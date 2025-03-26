@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="Image_Processor_tb_time_impl.wdb" id="1">
+         <top_modules>
+            <top_module name="Image_Processor_tb" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="81400001fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="469"></NameColumnWidth>
+      <ValueColumnWidth column_width="161"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="19" />
+   <wave_markers>
+      <marker time="20628516" label="" />
+      <marker time="144695" label="" />
+      <marker time="41164719" label="" />
+      <marker time="61645570" label="" />
+   </wave_markers>
+   <wvobject fp_name="/Image_Processor_tb/sys_clk" type="logic">
+      <obj_property name="ElementShortName">sys_clk</obj_property>
+      <obj_property name="ObjectShortName">sys_clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/rst_n" type="logic">
+      <obj_property name="ElementShortName">rst_n</obj_property>
+      <obj_property name="ObjectShortName">rst_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/valid_in" type="logic">
+      <obj_property name="ElementShortName">valid_in</obj_property>
+      <obj_property name="ObjectShortName">valid_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/vsync_in" type="logic">
+      <obj_property name="ElementShortName">vsync_in</obj_property>
+      <obj_property name="ObjectShortName">vsync_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/href_in" type="logic">
+      <obj_property name="ElementShortName">href_in</obj_property>
+      <obj_property name="ObjectShortName">href_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/R" type="array">
+      <obj_property name="ElementShortName">R[15:0]</obj_property>
+      <obj_property name="ObjectShortName">R[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/G" type="array">
+      <obj_property name="ElementShortName">G[15:0]</obj_property>
+      <obj_property name="ObjectShortName">G[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/B" type="array">
+      <obj_property name="ElementShortName">B[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/U_Imageprocessor/u_Rgb_to_ycrcb/B1" type="array">
+      <obj_property name="ElementShortName">B1[15:0]</obj_property>
+      <obj_property name="ObjectShortName">B1[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/U_Imageprocessor/u_Rgb_to_ycrcb/Y" type="array">
+      <obj_property name="ElementShortName">Y[7:0]</obj_property>
+      <obj_property name="ObjectShortName">Y[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/U_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row1" type="array">
+      <obj_property name="ElementShortName">row1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row1[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/U_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row2" type="array">
+      <obj_property name="ElementShortName">row2[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row2[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/U_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/row3" type="array">
+      <obj_property name="ElementShortName">row3[7:0]</obj_property>
+      <obj_property name="ObjectShortName">row3[7:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/U_Imageprocessor/u_VIP_Matrix_Generate_3x3_8Bit/cnt" type="array">
+      <obj_property name="ElementShortName">cnt[11:0]</obj_property>
+      <obj_property name="ObjectShortName">cnt[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/dout" type="logic">
+      <obj_property name="ElementShortName">dout</obj_property>
+      <obj_property name="ObjectShortName">dout</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/rgb_out" type="array">
+      <obj_property name="ElementShortName">rgb_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">rgb_out[23:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/valid_out" type="logic">
+      <obj_property name="ElementShortName">valid_out</obj_property>
+      <obj_property name="ObjectShortName">valid_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/vsync_out" type="logic">
+      <obj_property name="ElementShortName">vsync_out</obj_property>
+      <obj_property name="ObjectShortName">vsync_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Image_Processor_tb/href_out" type="logic">
+      <obj_property name="ElementShortName">href_out</obj_property>
+      <obj_property name="ObjectShortName">href_out</obj_property>
+   </wvobject>
+</wave_config>

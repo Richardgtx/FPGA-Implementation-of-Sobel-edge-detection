@@ -1,0 +1,144 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  5 10:07:24 2024
+# Process ID: 15540
+# Current directory: D:/Yolo_FPGA/Sobel
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20272 D:\Yolo_FPGA\Sobel\Sobel.xpr
+# Log file: D:/Yolo_FPGA/Sobel/vivado.log
+# Journal file: D:/Yolo_FPGA/Sobel\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/Yolo_FPGA/Sobel/Sobel.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+create_debug_core u_ila_0 ila
+set_property C_DATA_DEPTH 1024 [get_debug_cores u_ila_0]
+set_property C_TRIGIN_EN false [get_debug_cores u_ila_0]
+set_property C_TRIGOUT_EN false [get_debug_cores u_ila_0]
+set_property C_ADV_TRIGGER false [get_debug_cores u_ila_0]
+set_property C_INPUT_PIPE_STAGES 0 [get_debug_cores u_ila_0]
+set_property C_EN_STRG_QUAL false [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU true [get_debug_cores u_ila_0]
+set_property ALL_PROBE_SAME_MU_CNT 1 [get_debug_cores u_ila_0]
+connect_debug_port u_ila_0/clk [get_nets [list sys_clk_IBUF_BUFG ]]
+set_property port_width 8 [get_debug_ports u_ila_0/probe0]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe0]
+connect_debug_port u_ila_0/probe0 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/row2[0]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[1]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[2]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[3]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[4]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[5]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[6]} {u_VIP_Matrix_Generate_3x3_8Bit/row2[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe1]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe1]
+connect_debug_port u_ila_0/probe1 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[0]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[1]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[2]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[3]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[4]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[5]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[6]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[7]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[8]} {u_VIP_Matrix_Generate_3x3_8Bit/Gx_data[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 21 [get_debug_ports u_ila_0/probe2]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe2]
+connect_debug_port u_ila_0/probe2 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[0]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[1]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[2]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[3]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[4]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[5]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[6]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[7]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[8]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[9]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[10]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[11]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[12]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[13]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[14]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[15]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[16]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[17]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[18]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[19]} {u_VIP_Matrix_Generate_3x3_8Bit/Gxy_square[20]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 12 [get_debug_ports u_ila_0/probe3]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe3]
+connect_debug_port u_ila_0/probe3 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/cnt[0]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[1]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[2]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[3]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[4]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[5]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[6]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[7]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[8]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[9]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[10]} {u_VIP_Matrix_Generate_3x3_8Bit/cnt[11]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe4]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe4]
+connect_debug_port u_ila_0/probe4 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/row1[0]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[1]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[2]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[3]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[4]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[5]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[6]} {u_VIP_Matrix_Generate_3x3_8Bit/row1[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe5]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe5]
+connect_debug_port u_ila_0/probe5 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/row3[0]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[1]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[2]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[3]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[4]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[5]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[6]} {u_VIP_Matrix_Generate_3x3_8Bit/row3[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 10 [get_debug_ports u_ila_0/probe6]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe6]
+connect_debug_port u_ila_0/probe6 [get_nets [list {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[0]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[1]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[2]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[3]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[4]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[5]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[6]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[7]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[8]} {u_VIP_Matrix_Generate_3x3_8Bit/Gy_data[9]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe7]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe7]
+connect_debug_port u_ila_0/probe7 [get_nets [list {B_IBUF[0]} {B_IBUF[1]} {B_IBUF[2]} {B_IBUF[3]} {B_IBUF[4]} {B_IBUF[5]} {B_IBUF[6]} {B_IBUF[7]} {B_IBUF[8]} {B_IBUF[9]} {B_IBUF[10]} {B_IBUF[11]} {B_IBUF[12]} {B_IBUF[13]} {B_IBUF[14]} {B_IBUF[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe8]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe8]
+connect_debug_port u_ila_0/probe8 [get_nets [list {R_IBUF[0]} {R_IBUF[1]} {R_IBUF[2]} {R_IBUF[3]} {R_IBUF[4]} {R_IBUF[5]} {R_IBUF[6]} {R_IBUF[7]} {R_IBUF[8]} {R_IBUF[9]} {R_IBUF[10]} {R_IBUF[11]} {R_IBUF[12]} {R_IBUF[13]} {R_IBUF[14]} {R_IBUF[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 16 [get_debug_ports u_ila_0/probe9]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe9]
+connect_debug_port u_ila_0/probe9 [get_nets [list {G_IBUF[0]} {G_IBUF[1]} {G_IBUF[2]} {G_IBUF[3]} {G_IBUF[4]} {G_IBUF[5]} {G_IBUF[6]} {G_IBUF[7]} {G_IBUF[8]} {G_IBUF[9]} {G_IBUF[10]} {G_IBUF[11]} {G_IBUF[12]} {G_IBUF[13]} {G_IBUF[14]} {G_IBUF[15]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 8 [get_debug_ports u_ila_0/probe10]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe10]
+connect_debug_port u_ila_0/probe10 [get_nets [list {Y[0]} {Y[1]} {Y[2]} {Y[3]} {Y[4]} {Y[5]} {Y[6]} {Y[7]} ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe11]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe11]
+connect_debug_port u_ila_0/probe11 [get_nets [list u_VIP_Matrix_Generate_3x3_8Bit/flag ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe12]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe12]
+connect_debug_port u_ila_0/probe12 [get_nets [list u_VIP_Matrix_Generate_3x3_8Bit/rd_en ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe13]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe13]
+connect_debug_port u_ila_0/probe13 [get_nets [list valid_in_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe14]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe14]
+connect_debug_port u_ila_0/probe14 [get_nets [list valid_mid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe15]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe15]
+connect_debug_port u_ila_0/probe15 [get_nets [list vsync_in_IBUF ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe16]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe16]
+connect_debug_port u_ila_0/probe16 [get_nets [list vsync_mid ]]
+create_debug_port u_ila_0 probe
+set_property port_width 1 [get_debug_ports u_ila_0/probe17]
+set_property PROBE_TYPE DATA_AND_TRIGGER [get_debug_ports u_ila_0/probe17]
+connect_debug_port u_ila_0/probe17 [get_nets [list u_VIP_Matrix_Generate_3x3_8Bit/wr_en ]]
+file mkdir D:/Yolo_FPGA/Sobel/Sobel.srcs/constrs_1/new
+close [ open D:/Yolo_FPGA/Sobel/Sobel.srcs/constrs_1/new/constrain.xdc w ]
+add_files -fileset constrs_1 D:/Yolo_FPGA/Sobel/Sobel.srcs/constrs_1/new/constrain.xdc
+set_property target_constrs_file D:/Yolo_FPGA/Sobel/Sobel.srcs/constrs_1/new/constrain.xdc [current_fileset -constrset]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 2 ms
+restart
+run 2 ms
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 2 ms
+run all
+current_design synth_1
+delete_debug_core [get_debug_cores {u_ila_0 }]
+save_constraints -force
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+close_design
+close_design
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_sim
+launch_simulation -mode post-implementation -type timing
+source Image_Processor_tb.tcl
+run 2 ms
+run 2 ms
+restart
+run 2 ms

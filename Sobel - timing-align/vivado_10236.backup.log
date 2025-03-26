@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec  8 08:31:57 2024
+# Process ID: 10236
+# Current directory: D:/Yolo_FPGA/Sobel - timing-align
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12140 D:\Yolo_FPGA\Sobel - timing-align\Sobel.xpr
+# Log file: D:/Yolo_FPGA/Sobel - timing-align/vivado.log
+# Journal file: D:/Yolo_FPGA/Sobel - timing-align\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Yolo_FPGA/Sobel - timing-align/Sobel.xpr}
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/yao/APP/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 1138.758 ; gain = 0.000
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 14:19:20 2024...

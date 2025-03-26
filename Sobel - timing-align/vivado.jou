@@ -1,0 +1,41 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec  8 19:08:19 2024
+# Process ID: 25856
+# Current directory: D:/Yolo_FPGA/Sobel - timing-align
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20708 D:\Yolo_FPGA\Sobel - timing-align\Sobel.xpr
+# Log file: D:/Yolo_FPGA/Sobel - timing-align/vivado.log
+# Journal file: D:/Yolo_FPGA/Sobel - timing-align\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Yolo_FPGA/Sobel - timing-align/Sobel.xpr}
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+run 30000 us
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 10
+wait_on_run synth_1
+launch_runs impl_1 -jobs 10
+wait_on_run impl_1
+close_sim
+close_design
+launch_simulation -mode post-implementation -type timing
+open_wave_config {D:/Yolo_FPGA/Sobel - timing-align/Image_Processor_tb_time_impl.wcfg}
+source Image_Processor_tb.tcl
+run 30000 us
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+current_hw_device [get_hw_devices xc7a200t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a200t_0] 0]
+close_sim

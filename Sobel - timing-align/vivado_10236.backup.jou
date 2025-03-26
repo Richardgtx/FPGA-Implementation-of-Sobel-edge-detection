@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Dec  8 08:31:57 2024
+# Process ID: 10236
+# Current directory: D:/Yolo_FPGA/Sobel - timing-align
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12140 D:\Yolo_FPGA\Sobel - timing-align\Sobel.xpr
+# Log file: D:/Yolo_FPGA/Sobel - timing-align/vivado.log
+# Journal file: D:/Yolo_FPGA/Sobel - timing-align\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/Yolo_FPGA/Sobel - timing-align/Sobel.xpr}
+update_compile_order -fileset sources_1

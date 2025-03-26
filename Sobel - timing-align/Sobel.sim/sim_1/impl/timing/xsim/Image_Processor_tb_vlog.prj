@@ -1,0 +1,7 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"Image_Processor_tb_time_impl.v" \
+"../../../../../Sobel.srcs/sim_1/new/Image_Processor_tb.v" \
+
+# Do not sort compile order
+nosort
