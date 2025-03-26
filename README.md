@@ -5,8 +5,14 @@
 
 
 Core.jpg
+
+
 ![image](https://github.com/user-attachments/assets/aea4202b-1394-464a-82d3-9d08a1919a06)
+
+
 Core.bmp
+
+
 ![image](https://github.com/user-attachments/assets/17722208-d610-49fb-a1e9-460ac9366260)
 
 
